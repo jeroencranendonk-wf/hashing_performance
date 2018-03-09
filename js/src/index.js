@@ -23,7 +23,7 @@ const hashers = [
         return hash.digest().toHex();
     }],
     ['murmur', (values: string[]): string => {
-        const hash = new MurmurHash3();
+        const hash = MurmurHash3();
         values.forEach((x) => hash.hash(x));
         return hash.result();
     }],
@@ -63,4 +63,4 @@ function write(msg: string) {
     document.body.appendChild(element);
 }
 
-setTimeout(main);
+main();
