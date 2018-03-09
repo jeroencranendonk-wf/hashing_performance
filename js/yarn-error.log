@@ -1,0 +1,40 @@
+Arguments: 
+  /Users/jeroencranendonk/.nvm/versions/node/v8.10.0/bin/node /Users/jeroencranendonk/.yarn/bin/yarn.js -D add webpack
+
+PATH: 
+  /Users/jeroencranendonk/.nvm/versions/node/v8.10.0/bin:/Users/jeroencranendonk/.yarn/bin:/Users/jeroencranendonk/.rvm/bin:/usr/local/MacGPG2/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/sbin:/usr/local/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/‌​Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/Cellar/go/1.10/libexec/bin:/Users/jeroencranendonk/go/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "hashing_perf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: http://npm.workiva.net/acorn/-/acorn-5.5.3.tgz: ETIMEDOUT
+      at Timeout._onTimeout (/Users/jeroencranendonk/.yarn/lib/cli.js:123749:19)
+      at ontimeout (timers.js:482:11)
+      at tryOnTimeout (timers.js:317:5)
+      at Timer.listOnTimeout (timers.js:277:5)

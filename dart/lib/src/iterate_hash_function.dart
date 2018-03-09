@@ -21,13 +21,15 @@ Stream<PerformanceCounter> iterateHashFunction(HashFunction fn, int width, int i
   StreamController<PerformanceCounter> sc;
 
   Future<Null> measure() async {
-    List<String> values = new List.generate(iterations + width - 1, _uuid, growable: false);
+    // List<String> values = new List.generate(iterations + width - 1, _uuid, growable: false);
+    List<String> values = new List.filled(width, newUuid(), growable: false);
 
     Stopwatch total = new Stopwatch()..start();
     // Stopwatch iter = new Stopwatch()..start();
 
     for (int i = 0; i < iterations; i++) {
-      fn.hash(values.sublist(i, i + width));
+      // fn.hash(values.sublist(i, i + width));
+      fn.hash(values);
 
       // sc.add(new PerformanceCounter(name: fn.name, duration: iter.elapsed, isTotal: false));
       // iter.reset();

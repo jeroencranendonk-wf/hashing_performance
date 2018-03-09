@@ -1,0 +1,6 @@
+{
+    "eslint.packageManager": "yarn",
+    "eslint.enable": true,
+    "javascript.validate.enable": false,
+    "flow.useNPMPackagedFlow": true
+}
