@@ -69,11 +69,11 @@ class MurmurHash3 {
           continue next2;
         next2:
         case 2:
-          k1 ^= (key.charCodeAt(i + 1) & 0xffff) << 8;
+          k1 ^= (key.codeUnitAt(i + 1) & 0xffff) << 8;
           continue next1;
         next1:
         case 1:
-          k1 ^= (key.charCodeAt(i) & 0xffff);
+          k1 ^= (key.codeUnitAt(i) & 0xffff);
           break;
       }
 
